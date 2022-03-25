@@ -1,0 +1,153 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+</head>
+<style>
+.chakra-ui-light{
+  background-image: url(亮模式的图片链接) !important;
+  background-attachment: fixed;
+background-position:center
+}
+.chakra-ui-dark{
+  background-image: url(暗模式的二图片链接) !important;
+  background-attachment: fixed;
+background-position:center
+}
+.main-box {
+  border-radius: 15px !important;
+}
+.chakra-ui-light .main-box {
+  background-color: rgba(255,255,255,0.7) !important;
+}
+.chakra-ui-light .readme-box {
+  background-color: rgba(255,255,255,0.7)  !important;
+}
+.readme-box {
+  border-radius: 15px !important;
+}
+</style>
+#########################################################################################################这是自定义body
+<style>
+.footer{
+  display:none !important;
+}
+dibu{
+    border-top: 10px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+.App{
+   min-height:85vh;
+}
+</style>
+        <br />
+        <center class="dibu">
+            <div id="customize" style="display: none;" style="display:inline">
+    
+                <span style="color: rgb(13, 109, 252); font-weight: bold;" id="hitokoto">
+                        < a href=" " id="hitokoto_text">
+                            "spawn"
+                        </ a>
+
+                </span>
+    <p class="SiteRunningTime" style="font-weight:bold;color:#2894FF;">小破站已运行<label class="year">0</label>年<label class="month">0</label>月<label class="day">0</label>日<label class="hour">0</label>时<label class="minute">0</label>分<label class="second">0</label>秒</p >
+
+    <span class="nav-item">
+                    <a class="nav-link" href="https://alist-doc.nn.ci/" title="帮助文档" target="_blank" rel="noopener noreffer me">
+                        < img src="这里放图标" width="25" height="25" style="display:inline">
+                    </ a> 
+                </span>
+    <span class="nav-item">
+                    <a class="nav-link" href="/@manage" title="管理" target="_blank" rel="noopener noreffer me">
+                        < img src="这里放图标" width="25" height="25" style="display:inline">
+                    </ a>
+                </span>
+                <span class="nav-item">
+                    <a class="nav-link" href="https://github.com/Xhofe/alist" title="Alist" target="_blank" rel="noopener noreffer me">
+                        < img src="这里放图标" width="25" height="25" style="display:inline">
+                    </ a>
+                </span>
+            </div>
+
+             
+        </center>
+        <br />
+        <br />
+    </div>
+
+
+
+    <!--一言API-->
+    <script class="lazyloading" src="https://v1.hitokoto.cn/?encode=js&select=%23hitokoto" defer></script>
+
+</div>
+<script>   
+    let interval = setInterval(() => {
+        if (document.querySelector(".footer")) {
+            document.querySelector("#customize").style.display = "";
+            clearInterval(interval);
+        }
+    }, 200);
+</script>
+<script>
+    var startTime = "2022-01-20";
+    var calculationTime = function(startTime) {
+        var s1 = new Date(startTime.replace(/-/g, "/")),
+            s2 = new Date(),
+            runTime = parseInt((s2.getTime() - s1.getTime()) / 1000);
+        var year = Math.floor(runTime / 86400 / 365);
+        runTime = runTime % (86400 * 365);
+        var month = Math.floor(runTime / 86400 / 30);
+        runTime = runTime % (86400 * 30);
+        var day = Math.floor(runTime / 86400);
+        runTime = runTime % 86400;
+        var hour = Math.floor(runTime / 3600);
+        runTime = runTime % 3600;
+        var minute = Math.floor(runTime / 60);
+        runTime = runTime % 60;
+        var second = runTime;
+        document.querySelector(".SiteRunningTime > .year").innerText = year;
+        document.querySelector(".SiteRunningTime > .month").innerText = month;
+        document.querySelector(".SiteRunningTime > .day").innerText = day;
+        document.querySelector(".SiteRunningTime > .hour").innerText = hour;
+        document.querySelector(".SiteRunningTime > .minute").innerText = minute;
+        document.querySelector(".SiteRunningTime > .second").innerText = second
+    };
+    setInterval("calculationTime(startTime)", 1000);
+</script>
+
+<script>
+    let interval = setInterval(() => {
+        if (document.querySelector(".footer")) {
+            document.querySelector("#customize").style.display = "";
+            clearInterval(interval);
+        }
+    }, 200);
+</script>
+<script src="//api.itggg.cn/liive2d/autoload.js"></script>
+<script>
+function sleep (time) {
+    return new Promise((resolve) => setTimeout(resolve, time));
+}
+var buttons = 0;
+async function wait_loading() {
+    for (var i = 0; !buttons[5]; i) {
+        await sleep(250);
+        buttons = document.getElementsByClassName("chakra-button");
+    }
+}
+async function change_button() {
+    await wait_loading();
+    buttons[5].innerHTML = "mpv";
+    buttons[5].href = buttons[5].href.replace("iina://weblink?url=","mpv-alist://");
+}
+change_button()
+</script>
+<body>
+</body>
+</html>
