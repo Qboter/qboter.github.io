@@ -5,37 +5,135 @@
 <title>无标题文档</title>
 </head>
 	<style type="text/css">
-#news {
+* {
+	margin: 0px;
+	padding: 0px;
+}
+#box {
+    width: 770px;
+    height: 1000px;
     margin-right: auto;
     margin-left: auto;
-    width: 600px;
-    font-family: "管理字体...";
-    font-size: 16px;
 }
-* {
-	padding: 0px;
-	margin: 0px;
+body {
+    background-image: url(images/bg.gif);
+    background-repeat: repeat-x;
 }
-#news dl dt {
-    height: 30px;
-    width: 425px;
+#head {
+    height: 24px;
+    width: 770px;
+}
+#nav {
+    height: 28px;
+    width: 770px;
+    margin-top: 10px;
+}
+#banner {
+    height: 200px;
+    width: 770px;
+    margin-top: 5px;
+}
+#content {
+    height: 450px;
+    width: 770px;
+    margin-top: 30px;
+}
+#footer {
+    margin-top: 20px;
+    border-top: 1px solid #5A5A5A;
+}
+	.center{}
+#box #content #right1 {
+    width: 580px;
     float: left;
-    border-bottom: 1px dotted #000000;
+    height: 450px;
+    border-left: 1px solid #5a5a5a;
+    padding-left: 10px;
+    margin-left: 10px;
+}
+#box #content #left1 {
+    float: left;
+    width: 169px;
+    height: 450px;
+}
+tbody tr td {
+}
+.input {
+	width: 111px;
+}
+#login {
+    height: 23px;
+    width: 169px;
     font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
-    line-height: 30px;
-    background-image:url("../images/5004.png");
+    line-height: 23px;
+    margin-top: 10px;
+}
+#notebooks {
+    height: 200px;
+    width: 580px;
+}
+.pic {
+}
+.text1 {
+    font-family: "微软雅黑", "宋体";
+    font-size: 14px;
     background-repeat: no-repeat;
-    background-position: 8px center;
-    padding-left: 25px;
 }
-#news dl dd {
-    height: 30px;
-    width: 140px;
+#right1 #notebooks .rows {
+    width: 193px;
     float: left;
-    border-bottom: 1px dotted #000000;
+}
+.text2 {
+    background-image: url(images/tb.gif);
+    background-repeat: no-repeat;
+    padding-left: 30px;
+    font-family: "微软雅黑", "宋体";
+    font-size: 16px;
+    font-style: normal;
+}
+#list1 {
+    margin-top: 10px;
+}
+#list-lift {
+    float: left;
+}
+#list-r {
+    margin-left: 20px;
+    float: left;
+}
+.list2 {
+    height: 100px;
+    width: 350px;
+    margin-top: 10px;
+}
+.list2 ul li {
+    padding-left: 20px;
+    list-style-type: none;
+    background-image: url(images/tb01.gif);
+    background-repeat: no-repeat;
+    background-position: 10px center;
+    border-bottom: 1px dashed #000000;
     font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
-    line-height: 30px;
-    padding-right: 10px;
+    font-size: 14px;
+    margin-top: 4px;
+}
+	#list-r ul li {
+    padding-left: 20px;
+    list-style-type: none;
+    background-image: url(images/tb01.gif);
+    background-repeat: no-repeat;
+    background-position: 10px center;
+    border-bottom: 1px dashed #000000;
+    font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+    font-size: 14px;
+    margin-top: 3px;
+}
+#list-lift .list2 ul {
+    margin-top: 3px;
+}
+#footer-text {
+    text-align: left;
+    margin-left: 150px;
 }
 </style>
 <style>
@@ -76,11 +174,8 @@ dibu{
    min-height:85vh;
 }
 </style>
-
-
     <!--一言API-->
     <script class="lazyloading" src="https://v1.hitokoto.cn/?encode=js&select=%23hitokoto" defer></script>
-
 
 <script>   
     let interval = setInterval(() => {
@@ -116,7 +211,6 @@ dibu{
     };
     setInterval("calculationTime(startTime)", 1000);
 </script>
-
 <script>
     let interval = setInterval(() => {
         if (document.querySelector(".footer")) {
@@ -147,22 +241,104 @@ change_button()
 </script>
 -->
 <body>
-	<div id="news">
-	<dl>
-	  <dt>12345678</dt>
-	  <dd>2022-11.01</dd>
-	  <dt>22345678</dt>
-	  <dd>2022-11.01</dd>
-	  <dt>32345678</dt>
-	  <dd>2022-11.01</dd>
-		<dt>42345678</dt>
-	  <dd>2022-11.01</dd>
-		<dt>52345678	</dt>
-	  <dd>2022-11.01</dd>
-		<dt>62345678</dt>
-	  <dd>2022-11.01</dd>
-  </dl>
- 
-</div>
+<div id="box">
+    <div id="head">
+		<img src="images/logo.gif" width="101" height="24" alt=""/>
+		<img src="images/home.gif" alt="" width="37" height="18" style="margin-left: 518px;"/>
+		<img src="images/map.gif" alt="" width="48" height="18" />
+		<img src="images/english.gif" width="46" height="18" alt=""/>
+	  </div>
+    <div id="nav"><img src="images/menu01.gif" width="102" height="28" alt="" style="margin-left: 244px;"/>
+		<img src="images/menu02.gif" alt="" width="102" height="28" />
+		<img src="images/menu03.gif" width="102" height="28" alt=""/>
+		<img src="images/menu04.gif" width="99" height="28" alt=""/>
+		<img src="images/menu05.gif" width="101" height="28" alt=""/></div>
+    <div id="banner"><img src="images/img.gif" width="770" height="200" alt=""/></div>
+    <div id="content">
+      <div id="left1"><img src="images/bt.gif" width="169" height="28" alt=""/>
+	<table width="169" border="1" style="margin-top:5px; ">
+  <tbody>
+    <tr>
+      <td width="42">user：</td>
+      <td width="111"><input name="user" type="text" class="input" id="user"></td>
+    </tr>
+    <tr>
+      <td>pass：</td>
+      <td><input name="pass" type="password" class="input" id="pass"></td>
+    </tr>
+  </tbody>
+</table>
+	<div id="login">注册|忘记密码<img src="images/button.gif" width="51" height="19" style="margin-left: 16px;" alt=""/></div>
+      <img src="images/fsh.gif" width="167" height="225" alt=""/> 
+	    <img src="images/btn.gif" width="161" height="27" alt=""/> 
+		<img src="images/img01.gif" width="150" height="65" alt=""/></div>
+      <div id="right1">
+        <div id="notebooks">
+          <div class="rows">
+            <div class="pic"><img src="images/img02.gif" width="158" height="86" alt=""/></div>
+              <div class="text2">消费类笔记本</div>
+              <div class="text1">显示屏幕：159*69点阵<br>
+              键盘：59键<br>
+              电源：内置可充电锂离子电池<br>
+            外型尺寸：103*69*16.5mm</div>
+  
+          </div>
+			<div class="rows">
+            <div class="pic"><img src="images/img03.gif" width="158" height="86" alt=""/></div>
+              <div class="text2">消费类笔记本</div>
+              <div class="text1">显示屏幕：169*69点阵<br>
+              键盘：59键<br>
+              电源：内置可充电锂离子电池<br>
+            外型尺寸：100*69*16.5mm</div>
+  
+          </div>
+		  <div class="rows">
+            <div class="pic"><img src="images/img04.gif" width="158" height="87" alt=""/></div>
+              <div class="text2">消费类笔记本</div>
+              <div class="text1">显示屏幕：179*69点阵<br>
+              键盘：59键<br>
+              电源：内置可充电锂离子电池<br>
+            外型尺寸：120*69*16.5mm</div>
+  
+          </div>
+        </div>
+        <div id="list1">
+          <div id="list-lift">
+            <div class="list2"><img src="images/down.gif" width="335" height="28" alt=""/>
+			  <ul>
+			    <li>简约时尚的外观，金属外壳简约时尚【2006-11-11】</li>
+			    <li>简约时尚的外观，金属外壳简约时尚【2006-11-11】</li>
+				<li>简约时尚的外观，金属外壳简约时尚【2006-11-11】</li>
+		      </ul>
+            </div>
+			  <div class="list2"><img src="images/down.gif" width="335" height="28" alt=""/>
+			  <ul>
+			    <li>简约时尚的外观，金属外壳简约时尚【2006-11-11】</li>
+			    <li>简约时尚的外观，金属外壳简约时尚【2006-11-11】</li>
+				<li>简约时尚的外观，金属外壳简约时尚【2006-11-11】</li>
+		      </ul>
+            </div>
+			  
+			</div>
+          <div id="list-r"><img src="images/service.gif" width="205" height="50" alt=""/>
+			  <ul>
+			    <li>售后服务Service</li>
+			      <li>售后政策Policy</li>
+		        <li>售后网点Net Point</li>
+		        <li>下载网点Download</li>
+		      </ul>
+			  <img src="images/FAQ.gif" width="205" height="76" alt=""/></div>
+			
+        </div>
+		  
+      </div>
+    </div>
+    <div id="footer">
+      
+        <img src="images/b_lo.gif" width="101" height="24" style="float: left" alt="">	
+        <div id="footer-text">创世纪教育电子产品有限公司 All rights reserved 客户服务热线：+86- 18406602620
+	  <br>今日访问次数114次，总访问次数514次</div>
+    </div>
+  </div>
 </body>
 </html>
